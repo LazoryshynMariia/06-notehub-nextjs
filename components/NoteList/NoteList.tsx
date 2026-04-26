@@ -9,7 +9,6 @@ interface NoteListProps {
 }
 
 export function NoteList({ notes }: NoteListProps) {
-    console.log(notes);
     
     const queryClient = useQueryClient();
 
