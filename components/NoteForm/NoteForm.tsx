@@ -77,6 +77,7 @@ export default function NoteForm({onClose}: NoteFormProps) {
                 <div className={css.formGroup}>
                     <label htmlFor={`${fieldId} - tag`}>Tag</label>
                     <Field as="select" id={`${fieldId} - tag`} name="tag" className={css.select}>
+                        <option value="" disabled> Виберіть тег </option>
                         <option value="Todo">Todo</option>
                         <option value="Work">Work</option>
                         <option value="Personal">Personal</option>
