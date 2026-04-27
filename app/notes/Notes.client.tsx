@@ -46,7 +46,7 @@ if (isError) {
     <>
       <div className={css.app}>
         <header className={css.toolbar}>
-          <SearchBox text={searchQuery} onSearch={handleSearch}/>
+          <SearchBox defaultValue={searchQuery} onSearch={handleSearch}/>
           {totalPages > 1 && (
             <Pagination
               totalPages={totalPages}
