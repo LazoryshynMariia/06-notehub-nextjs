@@ -1,4 +1,4 @@
-import { Formik, Form, Field, type FormikHelpers, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import css from "./NoteForm.module.css";
 import { useId } from "react";
 import * as Yup from "yup";
@@ -48,10 +48,8 @@ export default function NoteForm({onClose}: NoteFormProps) {
 
     const handleSabmit = (
         values: NoteFormValues,
-        actions: FormikHelpers<NoteFormValues>
     ) => {
         mutation.mutate(values);
-        actions.resetForm();
     };
 
     return (
